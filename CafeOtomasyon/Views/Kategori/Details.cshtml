@@ -1,0 +1,28 @@
+﻿@model CafeOtomasyon.Models.Kategori
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div>
+    <h4>Kategori</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Kategori Ad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kategoriAd)
+        </dd>
+        <hr />
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("<<Geri", "Index") |
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.id })
+
+</p>
